@@ -129,6 +129,10 @@ dmypy.json
 .pyre/
 
 token.txt
+<<<<<<< HEAD
 #*.exe
+=======
+*.exe
+>>>>>>> 4ab96f1d306aa370cbbfa3eacc31a35c9157b737
 
 Scripts/
