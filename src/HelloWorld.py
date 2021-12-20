@@ -38,9 +38,7 @@ async def on_reaction_add(reaction, user):
 @discord_client.event
 async def on_message_edit(before, after):
 
-    #print(str(before.author, before.content, after.content))
-    await before.channel.send(before.content)
-
+    await before.channel.send(f'{before.author} edit a message:\nBefore: {before.content}\nAfter: {after.content}')
 
 
 '''read token from file'''
