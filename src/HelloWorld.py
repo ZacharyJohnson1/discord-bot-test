@@ -2,7 +2,9 @@ import discord
 import re
 
 #create client
-discord_client = discord.Client()
+intents = discord.Intents.default()
+intents.members = True
+discord_client = discord.Client(intents=intents)
 
 #read token from file
 with open('token.txt') as token_file_client:
